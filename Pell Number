@@ -1,0 +1,19 @@
+import java.util.Scanner;  
+public class PellNumber  
+{  
+public static void main(String args[])  
+{  
+int  limit, a=1, b=0, c;  
+Scanner s=new Scanner(System.in);  
+System.out.print("Enter the limit: ");  
+limit=s.nextInt();  
+System.out.println("First "+limit+" Pell numbers are: ");  
+for(int i=1; i<=limit; i++)  
+{  
+c=  (2 * b)+a;  
+System.out.print(c+" ");  
+a = b;  
+b = c;  
+}  
+}
+}  
